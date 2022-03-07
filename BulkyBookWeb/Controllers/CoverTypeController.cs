@@ -1,38 +1,34 @@
-﻿using BulkyBook.DataAccess;
-using BulkyBook.DataAccess.Repository.IRepository;
+﻿using BulkyBook.DataAccess.Repository.IRepository;
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyBook.Controllers
+namespace BulkyBookWeb.Controllers
 {
-    public class CategoryController : Controller
+    public class CoverTypeController : Controller
     {
-        private readonly ICategoryRepository _db;
-        public CategoryController(ICategoryRepository db)
+
+        private readonly ICoverTypeRepository _db;
+        public CoverTypeController(ICoverTypeRepository db)
         {
             _db = db;
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList = _db.GetAll();
-            return View(objCategoryList);
+            IEnumerable<CoverType> objCoverTypeList = _db.GetAll();
+            return View(objCoverTypeList);
         }
 
         //Get
         public IActionResult Create()
         {
             return View();
-  
+
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
+        public IActionResult Create(CoverType obj)
         {
-            if(obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("Customer Error", "The DisplayOrder cannot exactly match the Name");
-            }
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _db.Add(obj);
                 _db.Save();
@@ -45,7 +41,7 @@ namespace BulkyBook.Controllers
         //Get
         public IActionResult Edit(int? id)
         {
-            if(id == null || id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
@@ -64,12 +60,8 @@ namespace BulkyBook.Controllers
         //Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category obj)
+        public IActionResult Edit(CoverType obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("Customer Error", "The DisplayOrder cannot exactly match the Name");
-            }
             if (ModelState.IsValid)
             {
                 _db.Update(obj);
@@ -115,9 +107,7 @@ namespace BulkyBook.Controllers
 
             TempData["success"] = "Category deleted successfuly";
             return RedirectToAction("Index");
-  
-        }
 
+        }
     }
 }
-

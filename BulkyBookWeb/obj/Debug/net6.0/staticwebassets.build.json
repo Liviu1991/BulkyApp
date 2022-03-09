@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DEVy4gfulMbN26DZW65kPh3Rw0MFdbay7gZiUJLyHCk=",
+  "Hash": "6T32Res8sVvx7ojYOGfhjb9XosRccJuIABW/7HzRf5k=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\images\\products\\26640b4d-5c20-49fd-90c4-0b27198a30d6.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/products/26640b4d-5c20-49fd-90c4-0b27198a30d6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\26640b4d-5c20-49fd-90c4-0b27198a30d6.jpg"
     },
     {
       "Identity": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\js\\site.js",

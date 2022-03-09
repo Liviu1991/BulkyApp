@@ -19,8 +19,7 @@ public class ProductController : Controller
     }
     public IActionResult Index()
     {
-        IEnumerable<Product> objProductList = _unitOfWork.Product.GetAll();
-        return View(objProductList);
+        return View();
     }
 
 
@@ -123,6 +122,13 @@ public class ProductController : Controller
         return RedirectToAction("Index");
 
     }
-
+    #region API CALLS
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        var productList = _unitOfWork.Product.GetAll();
+        return Json(new {date = productList});
+    }
+    #endregion
 }
 

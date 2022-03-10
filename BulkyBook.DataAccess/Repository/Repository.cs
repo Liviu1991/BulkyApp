@@ -17,19 +17,20 @@ namespace BulkyBook.DataAccess.Repository
         public Repository(ApplicationDbContext db)
         {
             _db = db;
+            //_db.Products.Include(u => u.Category).Include(u=>u.CoverType);
             this.dbSet = _db.Set<T>();
         }
         public void Add(T entity)
         {
             dbSet.Add(entity);
         }
-
+        //includeProp - "Category,CoverType"
         public IEnumerable<T> GetAll(string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
-            if(includeProperties != null)
+            if (includeProperties != null)
             {
-                foreach(var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
@@ -40,6 +41,8 @@ namespace BulkyBook.DataAccess.Repository
         public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+
+            query = query.Where(filter);
             if (includeProperties != null)
             {
                 foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
@@ -47,7 +50,6 @@ namespace BulkyBook.DataAccess.Repository
                     query = query.Include(includeProp);
                 }
             }
-            query = query.Where(filter);
             return query.FirstOrDefault();
         }
 

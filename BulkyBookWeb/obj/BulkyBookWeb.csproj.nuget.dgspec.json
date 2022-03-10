@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
+    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
+    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
         "projectName": "BulkyBook.DataAccess",
-        "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Liviu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Liviu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj": {
-                "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj"
+              "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.Models\\BulkyBook.Models.csproj": {
+                "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.Models\\BulkyBook.Models.csproj"
               }
             }
           }
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0-preview.1.22076.6, )"
@@ -76,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj": {
+    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.Models\\BulkyBook.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.Models\\BulkyBook.Models.csproj",
         "projectName": "BulkyBook.Models",
-        "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj",
+        "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.Models\\BulkyBook.Models.csproj",
         "packagesPath": "C:\\Users\\Liviu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.Models\\obj\\",
+        "outputPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Liviu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,6 +116,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -150,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {
+    "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBookWeb\\BulkyBookWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBookWeb\\BulkyBookWeb.csproj",
         "projectName": "BulkyBookWeb",
-        "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
+        "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBookWeb\\BulkyBookWeb.csproj",
         "packagesPath": "C:\\Users\\Liviu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\obj\\",
+        "outputPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBookWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Liviu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -174,8 +182,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj"
+              "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyApp\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj"
               }
             }
           }
@@ -190,6 +198,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0-preview.1.22076.6, )"

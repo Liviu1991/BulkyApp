@@ -50,9 +50,11 @@ public class ProductController : Controller
 } 
         else
         {
+            productVM.Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
+            return View(productVM);
 
         }
-        return View(productVM);
+       
 
     }
 
@@ -126,8 +128,8 @@ public class ProductController : Controller
     [HttpGet]
     public IActionResult GetAll()
     {
-        var productList = _unitOfWork.Product.GetAll();
-        return Json(new {date = productList});
+        var productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+        return Json(new { data = productList });
     }
     #endregion
 }

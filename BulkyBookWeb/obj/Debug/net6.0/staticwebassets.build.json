@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6T32Res8sVvx7ojYOGfhjb9XosRccJuIABW/7HzRf5k=",
+  "Hash": "UThWml5xmvbU/e8ECZCCfwLkksf/SNbDGAII3nk6cwU=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -117,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\26640b4d-5c20-49fd-90c4-0b27198a30d6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\images\\products\\f5212ac6-30b4-4a7b-98fd-2152a7f85391.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/products/f5212ac6-30b4-4a7b-98fd-2152a7f85391.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\f5212ac6-30b4-4a7b-98fd-2152a7f85391.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\js\\product.js",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\Liviu\\Desktop\\Asp.Net _Projects\\BulkyBook\\BulkyBookWeb\\wwwroot\\js\\site.js",

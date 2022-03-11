@@ -19,7 +19,7 @@
 		</div>
 		<div class="mb-3">
 			<label asp-for="Product.Description"></label>
-			<textarea asp-for="Product.Description" rows="3" class="form-control"></textarea>
+			<textarea id="textarea" asp-for="Product.Description" rows="3" class="form-control"></textarea>
 			<span asp-validation-for="Product.Description" class="text-danger"></span>
 		</div>
 		<div class="mb-3 col-6">
@@ -95,11 +95,6 @@
 	</div>
 
 	
-
-
-
-
-
 </form>
 
 @section Scripts{
@@ -107,6 +102,12 @@
 	<partial name="_ValidationScriptsPartial" />
 	}
 <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      toolbar_mode: 'floating',
+   });
+
 	function ValidateInput(){
 		if(document.getElementById("uploadBox").value==""){
 			Swal.fire({
